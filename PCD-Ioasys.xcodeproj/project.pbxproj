@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		741115BD265BC70600C1270D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115BC265BC70600C1270D /* RegisterView.swift */; };
+		741115BF265BCEC200C1270D /* RegisterViewPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115BE265BCEC200C1270D /* RegisterViewPremium.swift */; };
+		741115C1265BD2B100C1270D /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115C0265BD2B100C1270D /* PaymentView.swift */; };
+		742161A4265697AE00D2DA2A /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742161A3265697AE00D2DA2A /* JobsView.swift */; };
+		745D407B265B0DE10086B2CC /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D407A265B0DE10086B2CC /* JobDetailView.swift */; };
+		745EAF842655EBB4002291E1 /* PCD_IoasysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */; };
+		745EAF862655EBB4002291E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF852655EBB4002291E1 /* ContentView.swift */; };
+		745EAF882655EBB6002291E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745EAF872655EBB6002291E1 /* Assets.xcassets */; };
+		745EAF8B2655EBB6002291E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745EAF8A2655EBB6002291E1 /* Preview Assets.xcassets */; };
+		745EAF93265600E0002291E1 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF92265600E0002291E1 /* Color+Extension.swift */; };
+		745EAF9726560558002291E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF9626560558002291E1 /* HomeView.swift */; };
+		747BC5DA265F18C3004F4BA4 /* HomePremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */; };
+		747BC5DE265F1DC8004F4BA4 /* CourseOneCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5DD265F1DC8004F4BA4 /* CourseOneCards.swift */; };
+		747BC5E0265F2321004F4BA4 /* CourseTwoCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5DF265F2321004F4BA4 /* CourseTwoCards.swift */; };
+		747BC5E2265F24DD004F4BA4 /* CourseThreeCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5E1265F24DD004F4BA4 /* CourseThreeCards.swift */; };
+		74A2FC822659730500058545 /* JobsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2FC812659730500058545 /* JobsCards.swift */; };
+		74A2FC8426598A0800058545 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2FC8326598A0800058545 /* TabBarController.swift */; };
+		74B2C5FD265B1C9E007138EA /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2C5FC265B1C9E007138EA /* MyAccountView.swift */; };
+		74B2C5FF265B239B007138EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2C5FE265B239B007138EA /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		741115BC265BC70600C1270D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		741115BE265BCEC200C1270D /* RegisterViewPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewPremium.swift; sourceTree = "<group>"; };
+		741115C0265BD2B100C1270D /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		742161A3265697AE00D2DA2A /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		745D407A265B0DE10086B2CC /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		745EAF802655EBB4002291E1 /* PCD-Ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PCD-Ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCD_IoasysApp.swift; sourceTree = "<group>"; };
+		745EAF852655EBB4002291E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		745EAF872655EBB6002291E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		745EAF8A2655EBB6002291E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		745EAF8C2655EBB6002291E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745EAF92265600E0002291E1 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		745EAF9626560558002291E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePremiumView.swift; sourceTree = "<group>"; };
+		747BC5DD265F1DC8004F4BA4 /* CourseOneCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseOneCards.swift; sourceTree = "<group>"; };
+		747BC5DF265F2321004F4BA4 /* CourseTwoCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTwoCards.swift; sourceTree = "<group>"; };
+		747BC5E1265F24DD004F4BA4 /* CourseThreeCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseThreeCards.swift; sourceTree = "<group>"; };
+		74A2FC812659730500058545 /* JobsCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCards.swift; sourceTree = "<group>"; };
+		74A2FC8326598A0800058545 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		74B2C5FC265B1C9E007138EA /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
+		74B2C5FE265B239B007138EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		745EAF7D2655EBB4002291E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		745EAF772655EBB4002291E1 = {
+			isa = PBXGroup;
+			children = (
+				745EAF822655EBB4002291E1 /* PCD-Ioasys */,
+				745EAF812655EBB4002291E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		745EAF812655EBB4002291E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				745EAF802655EBB4002291E1 /* PCD-Ioasys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		745EAF822655EBB4002291E1 /* PCD-Ioasys */ = {
+			isa = PBXGroup;
+			children = (
+				745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */,
+				745EAF852655EBB4002291E1 /* ContentView.swift */,
+				741115BC265BC70600C1270D /* RegisterView.swift */,
+				741115BE265BCEC200C1270D /* RegisterViewPremium.swift */,
+				741115C0265BD2B100C1270D /* PaymentView.swift */,
+				745EAF872655EBB6002291E1 /* Assets.xcassets */,
+				747BC5E1265F24DD004F4BA4 /* CourseThreeCards.swift */,
+				745EAF8C2655EBB6002291E1 /* Info.plist */,
+				745EAF892655EBB6002291E1 /* Preview Content */,
+				745EAF92265600E0002291E1 /* Color+Extension.swift */,
+				745EAF9626560558002291E1 /* HomeView.swift */,
+				747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */,
+				74A2FC8326598A0800058545 /* TabBarController.swift */,
+				74B2C5FE265B239B007138EA /* LoginView.swift */,
+				742161A3265697AE00D2DA2A /* JobsView.swift */,
+				745D407A265B0DE10086B2CC /* JobDetailView.swift */,
+				74B2C5FC265B1C9E007138EA /* MyAccountView.swift */,
+				74A2FC812659730500058545 /* JobsCards.swift */,
+				747BC5DD265F1DC8004F4BA4 /* CourseOneCards.swift */,
+				747BC5DF265F2321004F4BA4 /* CourseTwoCards.swift */,
+			);
+			path = "PCD-Ioasys";
+			sourceTree = "<group>";
+		};
+		745EAF892655EBB6002291E1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				745EAF8A2655EBB6002291E1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		745EAF7F2655EBB4002291E1 /* PCD-Ioasys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745EAF8F2655EBB6002291E1 /* Build configuration list for PBXNativeTarget "PCD-Ioasys" */;
+			buildPhases = (
+				745EAF7C2655EBB4002291E1 /* Sources */,
+				745EAF7D2655EBB4002291E1 /* Frameworks */,
+				745EAF7E2655EBB4002291E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PCD-Ioasys";
+			productName = "PCD-Ioasys";
+			productReference = 745EAF802655EBB4002291E1 /* PCD-Ioasys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		745EAF782655EBB4002291E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					745EAF7F2655EBB4002291E1 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 745EAF7B2655EBB4002291E1 /* Build configuration list for PBXProject "PCD-Ioasys" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 745EAF772655EBB4002291E1;
+			productRefGroup = 745EAF812655EBB4002291E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				745EAF7F2655EBB4002291E1 /* PCD-Ioasys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		745EAF7E2655EBB4002291E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745EAF8B2655EBB6002291E1 /* Preview Assets.xcassets in Resources */,
+				745EAF882655EBB6002291E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		745EAF7C2655EBB4002291E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741115BD265BC70600C1270D /* RegisterView.swift in Sources */,
+				747BC5DA265F18C3004F4BA4 /* HomePremiumView.swift in Sources */,
+				745EAF862655EBB4002291E1 /* ContentView.swift in Sources */,
+				74A2FC822659730500058545 /* JobsCards.swift in Sources */,
+				74B2C5FD265B1C9E007138EA /* MyAccountView.swift in Sources */,
+				742161A4265697AE00D2DA2A /* JobsView.swift in Sources */,
+				745EAF9726560558002291E1 /* HomeView.swift in Sources */,
+				74A2FC8426598A0800058545 /* TabBarController.swift in Sources */,
+				741115C1265BD2B100C1270D /* PaymentView.swift in Sources */,
+				745D407B265B0DE10086B2CC /* JobDetailView.swift in Sources */,
+				747BC5E0265F2321004F4BA4 /* CourseTwoCards.swift in Sources */,
+				74B2C5FF265B239B007138EA /* LoginView.swift in Sources */,
+				745EAF93265600E0002291E1 /* Color+Extension.swift in Sources */,
+				745EAF842655EBB4002291E1 /* PCD_IoasysApp.swift in Sources */,
+				741115BF265BCEC200C1270D /* RegisterViewPremium.swift in Sources */,
+				747BC5DE265F1DC8004F4BA4 /* CourseOneCards.swift in Sources */,
+				747BC5E2265F24DD004F4BA4 /* CourseThreeCards.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		745EAF8D2655EBB6002291E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		745EAF8E2655EBB6002291E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		745EAF902655EBB6002291E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PCD-Ioasys/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "PCD-Ioasys/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nathasha.PCD-Ioasys";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		745EAF912655EBB6002291E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PCD-Ioasys/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "PCD-Ioasys/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nathasha.PCD-Ioasys";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		745EAF7B2655EBB4002291E1 /* Build configuration list for PBXProject "PCD-Ioasys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745EAF8D2655EBB6002291E1 /* Debug */,
+				745EAF8E2655EBB6002291E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745EAF8F2655EBB6002291E1 /* Build configuration list for PBXNativeTarget "PCD-Ioasys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745EAF902655EBB6002291E1 /* Debug */,
+				745EAF912655EBB6002291E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 745EAF782655EBB4002291E1 /* Project object */;
+}
