@@ -134,9 +134,10 @@ struct JobDetailView: View {
                 }
                 
                 
+                Spacer().frame(height:60)
             }
             
-        }.navigationBarHidden(false).navigationBarTitle(Text("")).edgesIgnoringSafeArea([.top,.bottom])
+        }.navigationBarHidden(true).navigationBarTitle(Text("")).edgesIgnoringSafeArea([.top,.bottom])
        
     }
 }

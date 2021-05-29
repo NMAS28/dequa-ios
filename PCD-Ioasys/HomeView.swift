@@ -31,7 +31,11 @@ struct HomeView: View {
                     }.background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.9, height: 60)
                     Spacer().frame(height:10)
                     ZStack {
-                        Image("SecondImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: UIScreen.main.bounds.width, height: 350)
+                        NavigationLink(destination: RegisterViewPremium().navigationBarBackButtonHidden(false)){
+                            
+                            Image("SecondImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: UIScreen.main.bounds.width, height: 350)
+                            
+                        }
                     }
                     
                     
@@ -107,7 +111,7 @@ struct HomeView: View {
                         }.padding()
                     }
 
-                
+                    Spacer().frame(height:60)
                 }.frame(maxWidth: .infinity)}
                 .navigationBarHidden(true).navigationBarTitle(Text("Home")).edgesIgnoringSafeArea([.top,.bottom])
             

@@ -28,7 +28,21 @@ struct RegisterView: View {
     var body: some View {
         VStack {
             Spacer().frame(height:40)
-            Text("Cadastro").font(.system(size: 25, weight: .bold)).padding()
+            ZStack {
+                HStack{
+                    Button(action:{
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }
+                            
+                        })
+                    {
+                        Image("BackIcon").resizable().renderingMode(.original).frame(width:30, height:30).padding(.horizontal,10)
+                    }
+                    Spacer()
+                }
+                Text("Cadastro").font(.system(size: 25, weight: .bold)).padding()
+            }
             ScrollView(.vertical){
                 HStack{
                     Spacer().frame(width:10)
@@ -39,7 +53,8 @@ struct RegisterView: View {
                         Spacer()
                     }
                     Spacer()
-                    NavigationLink(destination: RegisterViewPremium().navigationBarBackButtonHidden(true)){Text("Plano Premium").font(.system(size: 25, weight: .bold)).foregroundColor(.black)}
+                    NavigationLink(destination: RegisterViewPremium().navigationBarBackButtonHidden(true)){
+                        Text("Plano Premium").font(.system(size: 25, weight: .bold)).foregroundColor(.black)}
                     Spacer().frame(width:10)
                 }
                 Spacer().frame(height:20)
@@ -56,24 +71,22 @@ struct RegisterView: View {
                     TextField("CPF", text : $cPF).textFieldStyle(CustomTextFieldStyle()).padding()
                     
                     
-                    HStack(spacing:60) {
+                    HStack{
                         HStack{
                             PickerField("Dia", data: self.day, selectionIndex: $selectedIndexDay).padding()
-                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)}.frame(width: UIScreen.main.bounds.width*0.30, height:80)
+                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)}.frame(width: UIScreen.main.bounds.width*0.30, height:60).background(Color(hex: 0xf2f2f2)).cornerRadius(12)
                         
                         
                         HStack{
-                            PickerField("Dia", data: self.day, selectionIndex: $selectedIndexDay).padding()
-                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)}.frame(width: UIScreen.main.bounds.width*0.30, height:80)
-                    }.background(Color.clear)
-                    HStack {
-                        Text("Código de segurança").font(.system(size: 20, weight: .bold)).padding(.horizontal,15)
-                        Spacer()
-                    }
+                            PickerField("Mês", data: self.month, selectionIndex: $selectedIndexMonth).padding()
+                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)}.frame(width: UIScreen.main.bounds.width*0.30, height:60).background(Color(hex: 0xf2f2f2)).cornerRadius(12)
                     
-                    Image("CalendarImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 40, height: 30)
+                        HStack{
+                            PickerField("Ano", data: self.year, selectionIndex: $selectedIndexYear).padding()
+                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)}.frame(width: UIScreen.main.bounds.width*0.30, height:60).background(Color(hex: 0xf2f2f2)).cornerRadius(12)
+                    }
                 }
-                .background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.92, height: 60).padding()
+                
                 
                 Group {
                     Spacer().frame(height:20)
@@ -97,7 +110,7 @@ struct RegisterView: View {
                     
                 }
                 
-                
+                Spacer().frame(height:60)
             }
             
         }.navigationBarHidden(true).navigationBarTitle(Text("RegisterView")).edgesIgnoringSafeArea([.top,.bottom])
