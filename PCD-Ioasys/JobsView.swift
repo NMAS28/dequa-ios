@@ -9,16 +9,31 @@ import SwiftUI
 
 struct JobsView: View {
     @State var search : String = ""
+    @State var selectedIndex: Int? = nil
+    let options : [String] = ["Mudez", "Surdez", "Mudez e Surdez"]
+    @State var selectedIndexFilter: Int? = nil
+    let filter : [String] = ["Carpinteiro"]
     var body: some View{
         VStack {
             Spacer().frame(height:50)
             Text("Vagas").font(.system(size: 25, weight: .bold)).padding()
             
             HStack {
-                VStack(spacing:2){
-                    Image("Filter").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width:30, height:30)
-                    Text("Filtro").font(.system(size: 14, weight: .regular))
+                
+                    Text("+1500 vagas").font(.system(size: 15, weight: .medium)).padding(.horizontal,10).foregroundColor(.black)
+            Spacer()}
+            
+            HStack {
+                Button(action: {
+                    PickerField("Ano", data: self.filter, selectionIndex: $selectedIndexFilter)
+                } ){
+                    VStack(spacing:2){
+                        Image("Filter").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width:30, height:30)
+                        Text("Filtrar").font(.system(size: 14, weight: .regular)).foregroundColor(.black)
+                    }
                 }
+                
+                PickerField("", data: self.options, selectionIndex: $selectedIndex).frame(width: 0, height: 0)
                 HStack(spacing:2) {
                     
                     Image("GlassImage").padding(.leading, 10)
@@ -31,8 +46,13 @@ struct JobsView: View {
             
             ScrollView(.vertical) {
                 ForEach(0..<50){_ in
-                    JobsCards().cornerRadius(15).shadow(radius: 15)
-                }
+                    HStack (spacing:13){
+                        ForEach(0..<2) {_ in
+                            NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(false)){
+                                JobsCardsJobsView()}.cornerRadius(15).shadow(radius: 2)
+                        }
+                    }
+                    Spacer().frame(height:15) }
             }
         }.navigationBarHidden(true).navigationBarTitle(Text("Vagas")).edgesIgnoringSafeArea([.top,.bottom])
         

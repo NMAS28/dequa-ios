@@ -19,7 +19,7 @@ struct CourseOneCards: View {
             }
             
             HStack {
-                Text("Aprenda os princípios fundamentais de UI, como trabalhar com cores, tipografia, grid, hierarquia visual e muito mais...").font(.system(size: 18, weight: .medium))
+                Text("Aprenda os princípios fundamentais de UI, como trabalhar com cores, tipografia, grid, hierarquia visual e muito mais...").font(.system(size: 18, weight: .regular))
                 Spacer()
         
         }

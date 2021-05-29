@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabBarController: View {
+    var isPremium : Bool = false
     var body: some View {
         NavigationView {
             TabView {
@@ -21,11 +22,23 @@ struct TabBarController: View {
                         Image("JobsIcon")
                         Text("Vagas")
                     }
-            LoginView()
-                .tabItem{
-                    Image("UserIcon")
-                    Text("Usuário")
+                
+                if isPremium{
+                    EventsView()
+                        .tabItem{
+                            Image("CamImage")
+                            Text("Eventos")
+                        }
                 }
+                
+                MyAccountView()
+                    .tabItem{
+                        Image("UserIcon")
+                        Text("Conta")
+                    }
+                
+                
+                
             }
         }
     }

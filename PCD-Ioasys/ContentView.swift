@@ -32,14 +32,22 @@ struct ExtractedView: View {
             }
             VStack {
                 HStack {
-                    Text("DeQua").font(.system(size: 40, weight: .medium)).padding()
+                    Text("Educação qualitativa").font(.system(size: 40, weight: .medium)).padding(.horizontal,15)
                     Spacer()
                 }
-                HStack {
-                    Text("Nosso intuito é promover e facilitar a presença de deficientes auditivos e de fala no mercado de trabalho, auxiliando na busca de vagas e propondo recursos alternativos para sua capacitação. Vamos juntos na luta pela inclusão.").font(.system(size: 19, weight: .regular)).padding()
-                    Spacer()
+                Spacer()
+                HStack{
+                    Color(hex:0x006671).frame(width:5,height:140).padding(.leading,10)
+                    Text("Nosso intuito é promover e facilitar a presença de deficientes auditivos e de fala no mercado de trabalho. Conheça nossos eventos voltados para sua necessidade, te auxiliando na busca de vagas e proponto recursos alternativos para sua capacitação.").font(.system(size: 19, weight: .regular))
                 }
             }
+            Spacer().frame(height:40)
+            HStack {
+                Text("Vamos juntos na luta pela inclusão.").font(.system(size: 19, weight: .bold)).padding(.horizontal,15)
+                Spacer()
+            }
+            Spacer()
+            
             Spacer()
             HStack {
                 Spacer()

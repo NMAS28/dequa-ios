@@ -18,7 +18,7 @@ struct CourseThreeCards: View {
                 Spacer()
             }
             HStack {
-                Text("A família é a instituição/espaço social no qual o surdo passa a maior parte do tempo.Lhe ajudará a se constituir emocional, subjetiva e socialmente.").font(.system(size: 18, weight: .medium))
+                Text("A família é a instituição/espaço social no qual o surdo passa a maior parte do tempo.Lhe ajudará a se constituir emocional, subjetiva e socialmente.").font(.system(size: 18, weight: .regular))
                 Spacer()
         
         }

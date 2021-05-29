@@ -5,6 +5,7 @@ struct JobDetailView: View {
     @State var CVName: String = ""
     var body: some View {
         VStack {
+            Spacer().frame(height:40)
             Text("Vagas").font(.system(size: 25, weight: .bold)).padding()
             
             ScrollView(.vertical){
@@ -50,32 +51,32 @@ struct JobDetailView: View {
                         Text("Detalhes da vaga").font(.system(size: 23, weight: .bold)).padding()
                         Spacer()
                     }
-                    Text("Executar as atividades de processamento e industrialização de alimentos na linha de produção de atuação, de acordo com os procedimentos operacionais, padrão de qualidade e produtividade definido, normas de segurança e legislação vigente. Fique ligado nos requisitos da vaga.").font(.system(size: 20, weight: .medium)).padding(10)
+                    Text("Executar as atividades de processamento e industrialização de alimentos na linha de produção de atuação, de acordo com os procedimentos operacionais, padrão de qualidade e produtividade definido, normas de segurança e legislação vigente. Fique ligado nos requisitos da vaga.").font(.system(size: 20, weight: .regular)).padding(10)
                     
                     HStack {
                         Text("Informações sobre a empresa").font(.system(size: 23, weight: .bold)).padding()
                         Spacer()
                     }
-                    Text("Somos especialistas em trazer o melhor do universo digital para nossos clientes e a transormar a sociedade, a repensá-la e a evoluií-la. Ajudamos marcas a inovar através da transformação digital e seguindo os princípios de metodologia ágil e abordagem centrada ao usuário, modificando a realidade das pessoas com tecnologia de ponta a ponta.").font(.system(size: 20, weight: .medium)).padding()
+                    Text("Somos especialistas em trazer o melhor do universo digital para nossos clientes e a transormar a sociedade, a repensá-la e a evoluií-la. Ajudamos marcas a inovar através da transformação digital e seguindo os princípios de metodologia ágil e abordagem centrada ao usuário, modificando a realidade das pessoas com tecnologia de ponta a ponta.").font(.system(size: 20, weight: .regular)).padding()
                     
                     HStack {
                         Text("Habilidades necessárias").font(.system(size: 20, weight: .bold)).padding()
                         Spacer()
                     }
                     HStack {
-                        Text("•Alfabetizado").font(.system(size: 18, weight: .medium)).padding(.horizontal,10)
+                        Text("•Alfabetizado").font(.system(size: 18, weight: .regular)).padding(.horizontal,10)
                         Spacer()
                     }
                     HStack {
-                        Text("•Disponibilidade de horário").font(.system(size: 18, weight: .medium)).padding(.horizontal,10)
+                        Text("•Disponibilidade de horário").font(.system(size: 18, weight: .regular)).padding(.horizontal,10)
                         Spacer()
                     }
                     HStack {
-                        Text("•Disponibilidades aos sábados").font(.system(size: 18, weight: .medium)).padding(.horizontal,10)
+                        Text("•Disponibilidades aos sábados").font(.system(size: 18, weight: .regular)).padding(.horizontal,10)
                         Spacer()
                     }
                     HStack {
-                        Text("•Assiduidade, compromisso e responsabilidade").font(.system(size: 18, weight: .medium)).padding(.horizontal,10)
+                        Text("•Assiduidade, compromisso e responsabilidade").font(.system(size: 18, weight: .regular)).padding(.horizontal,10)
                         Spacer()
                     }
                 }
@@ -88,7 +89,7 @@ struct JobDetailView: View {
                         Spacer()
                     }
                     HStack {
-                        Text("8 horas diárias").font(.system(size: 18, weight: .medium)).padding(.horizontal,15)
+                        Text("8 horas diárias").font(.system(size: 18, weight: .regular)).padding(.horizontal,15)
                         Spacer()
                     }
                     
@@ -99,7 +100,7 @@ struct JobDetailView: View {
                         Spacer()
                     }
                     HStack {
-                        Text("Sim, a empresa tem todos os artefatos necessários para lidar com sua deficiência.").font(.system(size: 18, weight: .medium)).padding()
+                        Text("Sim, a empresa tem todos os artefatos necessários para lidar com sua deficiência.").font(.system(size: 18, weight: .regular)).padding()
                         Spacer()
                     }
                     HStack {
@@ -127,7 +128,7 @@ struct JobDetailView: View {
                 }
                 
                 Button(action: {
-                    
+                    UIAlertController.alert(title: "Inscrito com sucesso!", message: "")
                 } ){
                     Text("Aplicar para vaga").font(.system(size: 22, weight: .bold)).foregroundColor(.white).padding(.horizontal, 80).padding(.vertical, 8).background(Color(hex:0x5d184b)).cornerRadius(8)
                 }
@@ -135,7 +136,8 @@ struct JobDetailView: View {
                 
             }
             
-        }
+        }.navigationBarHidden(false).navigationBarTitle(Text("")).edgesIgnoringSafeArea([.top,.bottom])
+       
     }
 }
 struct CustomTextFieldStyle: TextFieldStyle{

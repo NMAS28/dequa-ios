@@ -10,40 +10,22 @@ import SwiftUI
 struct MyAccountView: View {
     var body: some View {
         VStack {
+            Spacer().frame(height:40)
             Group {
                 Text("Minha Conta").font(.system(size: 25, weight: .medium)).padding(.vertical,10)
-
-                Divider()
-                HStack {
-                    Button(action: {
-                        
-                    } ){
-                    Text("Acessar Conta").font(.system(size: 25, weight: .medium))
-                    Spacer()
-                    }
-                }
-                Spacer().frame(height:30)
-                Divider()
-                HStack {
-                    Button(action: {
-                        
-                    } ){
-                    Text("Criar conta").font(.system(size: 25, weight: .medium))
-                    Spacer()
-                    }
-                }
-                Spacer().frame(height:30)
-                Divider()
-                HStack {
-                    Button(action: {
-                        
-                    } ){
-                    Text("Plano premium").font(.system(size: 25, weight: .medium))
-                    Spacer()
-                    }
-                }
-                Spacer().frame(height:30)
                 
+                Divider()
+                HStack {
+                    
+                    NavigationLink(destination: LoginTwoView().navigationBarBackButtonHidden(true)){
+                    Image("UserIcon").padding()
+                    Text("Entre ou Cadastre-se").font(.system(size: 25, weight: .medium)).foregroundColor(.black)
+                        Spacer()
+                        
+                    }
+                    
+                }
+                Spacer().frame(height:30)
             }
             Group {
                 Divider()
@@ -51,45 +33,40 @@ struct MyAccountView: View {
                     Button(action: {
                         
                     } ){
-                    Text("Configurações").font(.system(size: 25, weight: .medium))
-                    Spacer()
+                        Text("Configurações").font(.system(size: 25, weight: .regular)).padding(.horizontal,10)
+                        Spacer()
                     }
                 }
                 Spacer().frame(height:30)
-                Divider()
                 HStack {
                     Button(action: {
                         
                     } ){
-                    Text("Central de atendimento").font(.system(size: 25, weight: .medium))
-                    Spacer()
+                        Text("Central de atendimento").font(.system(size: 25, weight: .regular)).padding(.horizontal,10)
+                        Spacer()
                     }
                 }
                 Spacer().frame(height:30)
             }
-            Divider()
             HStack {
                 Button(action: {
                     
-                } ){Text("Políticas e privacidade").font(.system(size: 25, weight: .medium))
-                Spacer()
+                } ){Text("Políticas de privacidade").font(.system(size: 25, weight: .regular)).padding(.horizontal,10)
+                    Spacer()
                 }
             }
-            Spacer().frame(height:30)
-            Divider()
+            Spacer().frame(height:50)
             HStack {
-                Button(action: {
-                    
-                } ){
-                    Text("Sair do aplicativo").font(.system(size: 25, weight: .medium)).foregroundColor(.red)
-                Spacer()
+                NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)){
+                    Text("Logout").font(.system(size: 25, weight: .regular)).foregroundColor(.red).padding(.horizontal,10)
+                    Spacer()
                 }
             }
             Spacer().frame(height:30)
-                        
-       Spacer()
             
-        }
+            Spacer()
+            
+        }.navigationBarHidden(true).navigationBarTitle(Text("MyAccountView")).edgesIgnoringSafeArea([.top,.bottom])
         
         
     }

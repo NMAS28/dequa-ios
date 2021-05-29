@@ -15,8 +15,15 @@ struct PaymentView: View {
     @State var year : String = ""
     @State var cVV : String = ""
     @State var plots : String = ""
+    @State var selectedIndexStatements: Int? = nil
+    let optionsStatements : [String] = ["1x Sem juros", "2x Sem juros", "3x Sem juros", "4x Com juros", "5x Com juros", "6x Com juros", "7x Com juros", "8x Com juros", "9x Com juros", "10x Com juros"]
+    @State var selectedIndexMonths: Int? = nil
+    let optionsMonths : [String] = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+    @State var selectedIndexYears: Int? = nil
+    let optionsYears : [String] = ["2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2035", "2036", "2037", "2038", "2039", "2040"]
     var body: some View {
         VStack {
+            Spacer().frame(height:40)
             Text("Pagamento").font(.system(size: 25, weight: .bold)).padding()
             ScrollView(.vertical){
                 
@@ -56,9 +63,16 @@ struct PaymentView: View {
                     Spacer().frame(height:20)
                     
                     HStack {
-                        TextField("Mês", text : $month).textFieldStyle(CustomTextFieldStyle()).padding(.horizontal,15)
+                        HStack {
+                            PickerField("Mês", data: self.optionsMonths, selectionIndex: $selectedIndexMonths).padding()
+                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)
+                        }.background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.40, height:60).padding()
                         
-                        TextField("Ano", text : $year).textFieldStyle(CustomTextFieldStyle()).padding(.horizontal,15)
+                        
+                        HStack {
+                            PickerField("Ano", data: self.optionsYears, selectionIndex: $selectedIndexYears).padding()
+                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)
+                        }.background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.40, height:60).padding()
                         
                     }
                     Spacer().frame(height:20)
@@ -76,32 +90,35 @@ struct PaymentView: View {
                     
                     Spacer().frame(height:20)
                     
-                    TextField("Selecionar número das parcelas", text : $year).textFieldStyle(CustomTextFieldStyle()).padding(.horizontal,15)
+                    HStack {
+                        PickerField("Selecione o número de parcelas", data: self.optionsStatements, selectionIndex: $selectedIndexStatements).padding(.horizontal,10)
+                        Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)
+                    }.background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.92, height:60).padding()
                     
                     Spacer().frame(height:20)
                     
-                    HStack {
-                        Text("Suas informações serão coletadas de acordo com a").font(.system(size: 18, weight: .medium)).padding()
-                        Spacer()
+                    VStack {
+                        Text("Suas informações serão coletadas de acordo com a").font(.system(size: 16, weight: .medium))
                         Button(action: {
-                            
+                            UIApplication.shared.open(URL(string: "https://www.paypal.com/br/webapps/mpp/ua/acceptableuse-full")!)
                         } ){
-                            Text("Política de Privacidade do PayPal").font(.system(size: 18, weight: .medium)).foregroundColor(.green)
+                            Text("Política de Privacidade do PayPal").font(.system(size: 16, weight: .medium)).foregroundColor(.green)
                             
                         }
                         
                     }
-                    Spacer().frame(height:20)
+                    Spacer().frame(height:30)
                     
                 }
                 
                 Button(action: {
+                    UIAlertController.alert(title: "Pagamento realizado com sucesso!", message: "")
                     
                 } ){
                     Text("Finalizar pagamento").font(.system(size: 22, weight: .bold)).foregroundColor(.white).padding(.horizontal, 90).padding(.vertical, 8).background(Color(hex:0x5d184b)).cornerRadius(8)
                 }
             }
-        }
+        }.navigationBarHidden(true).navigationBarTitle(Text("PaymentView")).edgesIgnoringSafeArea([.top,.bottom])
     }
 }
 

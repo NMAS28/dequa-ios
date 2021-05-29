@@ -16,8 +16,18 @@ struct RegisterView: View {
     @State var password : String = ""
     @State var confirmPassword : String = ""
     @State private var isNameError : Bool = false
+    @State var selectedIndex: Int? = nil
+    let options : [String] = ["Mudez", "Surdez", "Mudez e Surdez"]
+    @State var selectedIndexDay: Int? = nil
+    let day : [String] = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
+    @State var selectedIndexMonth: Int? = nil
+    let month : [String] = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+    @State var selectedIndexYear: Int? = nil
+    let year : [String] = (1910...2004).map { String($0) }
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack {
+            Spacer().frame(height:40)
             Text("Cadastro").font(.system(size: 25, weight: .bold)).padding()
             ScrollView(.vertical){
                 HStack{
@@ -29,9 +39,7 @@ struct RegisterView: View {
                         Spacer()
                     }
                     Spacer()
-                    Button(action: {
-                        
-                    } ){Text("Plano Premium").font(.system(size: 25, weight: .bold)).foregroundColor(.black)}
+                    NavigationLink(destination: RegisterViewPremium().navigationBarBackButtonHidden(true)){Text("Plano Premium").font(.system(size: 25, weight: .bold)).foregroundColor(.black)}
                     Spacer().frame(width:10)
                 }
                 Spacer().frame(height:20)
@@ -47,85 +55,62 @@ struct RegisterView: View {
                     
                     TextField("CPF", text : $cPF).textFieldStyle(CustomTextFieldStyle()).padding()
                     
-                    TextField("Data de nascimento", text : $birthDate).textFieldStyle(CustomTextFieldStyle()).padding()
                     
-                    TextField("Deficiência", text : $deficiency).textFieldStyle(CustomTextFieldStyle()).padding()
-                    
-                    TextField("Senha", text : $password).textFieldStyle(CustomTextFieldStyle()).padding()
-                    
-                    TextField("Confirmação de senha", text : $confirmPassword).textFieldStyle(CustomTextFieldStyle()).padding()
-                }
-                Spacer().frame(height:20)
-                Button(action: {
-                    
-                } ){
-                    Text("Entrar").font(.system(size: 22, weight: .bold)).foregroundColor(.white).padding(.horizontal, 135).padding(.vertical, 8).background(Color(hex:0x5d184b)).cornerRadius(8)
-                }
-                
-                
-                
-                
-            }
-        }
-    }
-    var body2: some View {
-            
-        VStack {
-            Text("Cadastro").font(.system(size: 25, weight: .bold)).padding()
-            ScrollView(.vertical){
-                HStack{
-                    Spacer().frame(width:10)
-                    Button(action: {
+                    HStack(spacing:60) {
+                        HStack{
+                            PickerField("Dia", data: self.day, selectionIndex: $selectedIndexDay).padding()
+                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)}.frame(width: UIScreen.main.bounds.width*0.30, height:80)
                         
-                    } ){Text("Plano Gratuito").font(.system(size: 25, weight: .bold)).foregroundColor(.black)
+                        
+                        HStack{
+                            PickerField("Dia", data: self.day, selectionIndex: $selectedIndexDay).padding()
+                            Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)}.frame(width: UIScreen.main.bounds.width*0.30, height:80)
+                    }.background(Color.clear)
+                    HStack {
+                        Text("Código de segurança").font(.system(size: 20, weight: .bold)).padding(.horizontal,15)
                         Spacer()
                     }
-                    Spacer()
-                    Button(action: {
-                        
-                    } ){Text("Plano Premium").font(.system(size: 25, weight: .bold)).foregroundColor(.black) .underline()}
-                    Spacer().frame(width:10)
+                    
+                    Image("CalendarImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 40, height: 30)
                 }
-                Spacer().frame(height:20)
-                Text("Crie seu perfil premium e tenha acesso a todas as vagas e cursos de especialização do nosso catálogo. Tudo por apenas 12x R$79,90. ").font(.system(size: 20, weight: .medium))
-                
-                Spacer().frame(height:20)
-                
-                
+                .background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.92, height: 60).padding()
                 
                 Group {
+                    Spacer().frame(height:20)
                     
-                    TextField("Nome Completo", text : $fullName).textFieldStyle(CustomTextFieldStyle()).padding()
-                    
-                    TextField("Email", text : $emailUserRegister).textFieldStyle(CustomTextFieldStyle()).padding()
-                    
-                    TextField("CPF", text : $cPF).textFieldStyle(CustomTextFieldStyle()).padding()
-                    
-                    TextField("Data de nascimento", text : $birthDate).textFieldStyle(CustomTextFieldStyle()).padding()
-                    
-                    TextField("Deficiência", text : $deficiency).textFieldStyle(CustomTextFieldStyle()).padding()
+                    HStack {
+                        PickerField("Deficiência", data: self.options, selectionIndex: $selectedIndex).padding(.horizontal,10)
+                        Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)
+                    }.background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.92, height:60).padding()
                     
                     TextField("Senha", text : $password).textFieldStyle(CustomTextFieldStyle()).padding()
+                    Spacer()
                     
                     TextField("Confirmação de senha", text : $confirmPassword).textFieldStyle(CustomTextFieldStyle()).padding()
-                }
-                Spacer().frame(height:20)
-                Button(action: {
                     
-                } ){
-                    Text("Ir para o pagamento").font(.system(size: 20, weight: .bold)).foregroundColor(.white).padding(.horizontal, 100).padding(.vertical, 8).background(Color(hex:0x5d184b)).cornerRadius(8)
+                    NavigationLink(destination: TabBarController().navigationBarBackButtonHidden(true)){
+                        Text("Cadastrar-se").font(.system(size: 22, weight: .bold)).foregroundColor(.white).padding(.horizontal, 135).padding(.vertical, 8).background(Color(hex:0x5d184b)).cornerRadius(8)
+                        
+                        
+                    }
+                    
+                    
                 }
-        }
-            
-                
-                
                 
                 
             }
-        }
-    struct RegisterView_Previews: PreviewProvider {
-        static var previews: some View {
-            RegisterView()
-        }
+            
+        }.navigationBarHidden(true).navigationBarTitle(Text("RegisterView")).edgesIgnoringSafeArea([.top,.bottom])
+        
+        
+        
+        
     }
 }
+
+struct RegisterView_Previews: PreviewProvider {
+    static var previews: some View {
+        RegisterView()
+    }
+}
+

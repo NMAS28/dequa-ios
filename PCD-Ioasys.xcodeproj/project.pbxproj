@@ -10,7 +10,15 @@
 		741115BD265BC70600C1270D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115BC265BC70600C1270D /* RegisterView.swift */; };
 		741115BF265BCEC200C1270D /* RegisterViewPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115BE265BCEC200C1270D /* RegisterViewPremium.swift */; };
 		741115C1265BD2B100C1270D /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115C0265BD2B100C1270D /* PaymentView.swift */; };
+		74210CD8265F42310076577A /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74210CD7265F42310076577A /* PickerTextField.swift */; };
+		74210CDA265F45520076577A /* PickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74210CD9265F45520076577A /* PickerField.swift */; };
+		74210CDE265FD56D0076577A /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74210CDD265FD56D0076577A /* EventsView.swift */; };
+		74210CE0265FD7B40076577A /* CardsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74210CDF265FD7B40076577A /* CardsEvents.swift */; };
 		742161A4265697AE00D2DA2A /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742161A3265697AE00D2DA2A /* JobsView.swift */; };
+		745249632661D57300CD4E20 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745249622661D57300CD4E20 /* SplashView.swift */; };
+		745249652662AE6000CD4E20 /* LoginTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745249642662AE6000CD4E20 /* LoginTwoView.swift */; };
+		7456E54726607E0E00D48B0C /* JobsCardsJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7456E54626607E0E00D48B0C /* JobsCardsJobsView.swift */; };
+		7456E54926608FB000D48B0C /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7456E54826608FB000D48B0C /* AlertController.swift */; };
 		745D407B265B0DE10086B2CC /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D407A265B0DE10086B2CC /* JobDetailView.swift */; };
 		745EAF842655EBB4002291E1 /* PCD_IoasysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */; };
 		745EAF862655EBB4002291E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF852655EBB4002291E1 /* ContentView.swift */; };
@@ -18,9 +26,10 @@
 		745EAF8B2655EBB6002291E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745EAF8A2655EBB6002291E1 /* Preview Assets.xcassets */; };
 		745EAF93265600E0002291E1 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF92265600E0002291E1 /* Color+Extension.swift */; };
 		745EAF9726560558002291E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF9626560558002291E1 /* HomeView.swift */; };
+		747BB4EA26604CF200426F88 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BB4E926604CF200426F88 /* EventDetailView.swift */; };
+		747BB4EC26605B0700426F88 /* CourseTwoCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BB4EB26605B0700426F88 /* CourseTwoCards.swift */; };
 		747BC5DA265F18C3004F4BA4 /* HomePremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */; };
 		747BC5DE265F1DC8004F4BA4 /* CourseOneCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5DD265F1DC8004F4BA4 /* CourseOneCards.swift */; };
-		747BC5E0265F2321004F4BA4 /* CourseTwoCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5DF265F2321004F4BA4 /* CourseTwoCards.swift */; };
 		747BC5E2265F24DD004F4BA4 /* CourseThreeCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5E1265F24DD004F4BA4 /* CourseThreeCards.swift */; };
 		74A2FC822659730500058545 /* JobsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2FC812659730500058545 /* JobsCards.swift */; };
 		74A2FC8426598A0800058545 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2FC8326598A0800058545 /* TabBarController.swift */; };
@@ -32,7 +41,15 @@
 		741115BC265BC70600C1270D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		741115BE265BCEC200C1270D /* RegisterViewPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewPremium.swift; sourceTree = "<group>"; };
 		741115C0265BD2B100C1270D /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		74210CD7265F42310076577A /* PickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTextField.swift; sourceTree = "<group>"; };
+		74210CD9265F45520076577A /* PickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerField.swift; sourceTree = "<group>"; };
+		74210CDD265FD56D0076577A /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		74210CDF265FD7B40076577A /* CardsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsEvents.swift; sourceTree = "<group>"; };
 		742161A3265697AE00D2DA2A /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		745249622661D57300CD4E20 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = ../../SplashView.swift; sourceTree = "<group>"; };
+		745249642662AE6000CD4E20 /* LoginTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTwoView.swift; sourceTree = "<group>"; };
+		7456E54626607E0E00D48B0C /* JobsCardsJobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCardsJobsView.swift; sourceTree = "<group>"; };
+		7456E54826608FB000D48B0C /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		745D407A265B0DE10086B2CC /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
 		745EAF802655EBB4002291E1 /* PCD-Ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PCD-Ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCD_IoasysApp.swift; sourceTree = "<group>"; };
@@ -42,9 +59,10 @@
 		745EAF8C2655EBB6002291E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		745EAF92265600E0002291E1 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		745EAF9626560558002291E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		747BB4E926604CF200426F88 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		747BB4EB26605B0700426F88 /* CourseTwoCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseTwoCards.swift; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/CourseTwoCards.swift"; sourceTree = "<group>"; };
 		747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePremiumView.swift; sourceTree = "<group>"; };
 		747BC5DD265F1DC8004F4BA4 /* CourseOneCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseOneCards.swift; sourceTree = "<group>"; };
-		747BC5DF265F2321004F4BA4 /* CourseTwoCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTwoCards.swift; sourceTree = "<group>"; };
 		747BC5E1265F24DD004F4BA4 /* CourseThreeCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseThreeCards.swift; sourceTree = "<group>"; };
 		74A2FC812659730500058545 /* JobsCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCards.swift; sourceTree = "<group>"; };
 		74A2FC8326598A0800058545 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -85,6 +103,7 @@
 				745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */,
 				745EAF852655EBB4002291E1 /* ContentView.swift */,
 				741115BC265BC70600C1270D /* RegisterView.swift */,
+				745249622661D57300CD4E20 /* SplashView.swift */,
 				741115BE265BCEC200C1270D /* RegisterViewPremium.swift */,
 				741115C0265BD2B100C1270D /* PaymentView.swift */,
 				745EAF872655EBB6002291E1 /* Assets.xcassets */,
@@ -92,16 +111,24 @@
 				745EAF8C2655EBB6002291E1 /* Info.plist */,
 				745EAF892655EBB6002291E1 /* Preview Content */,
 				745EAF92265600E0002291E1 /* Color+Extension.swift */,
+				747BB4EB26605B0700426F88 /* CourseTwoCards.swift */,
 				745EAF9626560558002291E1 /* HomeView.swift */,
 				747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */,
 				74A2FC8326598A0800058545 /* TabBarController.swift */,
 				74B2C5FE265B239B007138EA /* LoginView.swift */,
+				745249642662AE6000CD4E20 /* LoginTwoView.swift */,
 				742161A3265697AE00D2DA2A /* JobsView.swift */,
+				74210CDD265FD56D0076577A /* EventsView.swift */,
+				74210CDF265FD7B40076577A /* CardsEvents.swift */,
+				74210CD7265F42310076577A /* PickerTextField.swift */,
+				74210CD9265F45520076577A /* PickerField.swift */,
 				745D407A265B0DE10086B2CC /* JobDetailView.swift */,
+				7456E54826608FB000D48B0C /* AlertController.swift */,
+				747BB4E926604CF200426F88 /* EventDetailView.swift */,
 				74B2C5FC265B1C9E007138EA /* MyAccountView.swift */,
 				74A2FC812659730500058545 /* JobsCards.swift */,
+				7456E54626607E0E00D48B0C /* JobsCardsJobsView.swift */,
 				747BC5DD265F1DC8004F4BA4 /* CourseOneCards.swift */,
-				747BC5DF265F2321004F4BA4 /* CourseTwoCards.swift */,
 			);
 			path = "PCD-Ioasys";
 			sourceTree = "<group>";
@@ -185,21 +212,30 @@
 			files = (
 				741115BD265BC70600C1270D /* RegisterView.swift in Sources */,
 				747BC5DA265F18C3004F4BA4 /* HomePremiumView.swift in Sources */,
+				745249632661D57300CD4E20 /* SplashView.swift in Sources */,
 				745EAF862655EBB4002291E1 /* ContentView.swift in Sources */,
 				74A2FC822659730500058545 /* JobsCards.swift in Sources */,
+				7456E54926608FB000D48B0C /* AlertController.swift in Sources */,
 				74B2C5FD265B1C9E007138EA /* MyAccountView.swift in Sources */,
 				742161A4265697AE00D2DA2A /* JobsView.swift in Sources */,
 				745EAF9726560558002291E1 /* HomeView.swift in Sources */,
 				74A2FC8426598A0800058545 /* TabBarController.swift in Sources */,
 				741115C1265BD2B100C1270D /* PaymentView.swift in Sources */,
 				745D407B265B0DE10086B2CC /* JobDetailView.swift in Sources */,
-				747BC5E0265F2321004F4BA4 /* CourseTwoCards.swift in Sources */,
+				74210CE0265FD7B40076577A /* CardsEvents.swift in Sources */,
+				74210CDE265FD56D0076577A /* EventsView.swift in Sources */,
 				74B2C5FF265B239B007138EA /* LoginView.swift in Sources */,
+				7456E54726607E0E00D48B0C /* JobsCardsJobsView.swift in Sources */,
+				74210CDA265F45520076577A /* PickerField.swift in Sources */,
+				745249652662AE6000CD4E20 /* LoginTwoView.swift in Sources */,
 				745EAF93265600E0002291E1 /* Color+Extension.swift in Sources */,
 				745EAF842655EBB4002291E1 /* PCD_IoasysApp.swift in Sources */,
 				741115BF265BCEC200C1270D /* RegisterViewPremium.swift in Sources */,
 				747BC5DE265F1DC8004F4BA4 /* CourseOneCards.swift in Sources */,
 				747BC5E2265F24DD004F4BA4 /* CourseThreeCards.swift in Sources */,
+				747BB4EA26604CF200426F88 /* EventDetailView.swift in Sources */,
+				74210CD8265F42310076577A /* PickerTextField.swift in Sources */,
+				747BB4EC26605B0700426F88 /* CourseTwoCards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

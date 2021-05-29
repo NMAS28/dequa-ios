@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Rectangle 42.png",
+      "filename" : "LOGO_DEQUA_PNG.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Rectangle 42-2.png",
+      "filename" : "LOGO_DEQUA_PNG-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Rectangle 42-3.png",
+      "filename" : "LOGO_DEQUA_PNG-3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
