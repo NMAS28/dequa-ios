@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740DD93526643EB800F9775E /* Disability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740DD93426643EB800F9775E /* Disability.swift */; };
 		741115BD265BC70600C1270D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115BC265BC70600C1270D /* RegisterView.swift */; };
 		741115BF265BCEC200C1270D /* RegisterViewPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115BE265BCEC200C1270D /* RegisterViewPremium.swift */; };
 		741115C1265BD2B100C1270D /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741115C0265BD2B100C1270D /* PaymentView.swift */; };
@@ -15,11 +16,14 @@
 		74210CDE265FD56D0076577A /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74210CDD265FD56D0076577A /* EventsView.swift */; };
 		74210CE0265FD7B40076577A /* CardsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74210CDF265FD7B40076577A /* CardsEvents.swift */; };
 		742161A4265697AE00D2DA2A /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742161A3265697AE00D2DA2A /* JobsView.swift */; };
+		744B16D026644A7A007FCCEB /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B16CF26644A7A007FCCEB /* DataClass.swift */; };
 		745249632661D57300CD4E20 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745249622661D57300CD4E20 /* SplashView.swift */; };
 		745249652662AE6000CD4E20 /* LoginTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745249642662AE6000CD4E20 /* LoginTwoView.swift */; };
 		7456E54726607E0E00D48B0C /* JobsCardsJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7456E54626607E0E00D48B0C /* JobsCardsJobsView.swift */; };
 		7456E54926608FB000D48B0C /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7456E54826608FB000D48B0C /* AlertController.swift */; };
 		745D407B265B0DE10086B2CC /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D407A265B0DE10086B2CC /* JobDetailView.swift */; };
+		745E97C22663177F00A9B502 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 745E97C12663177F00A9B502 /* Alamofire */; };
+		745E97CB26640FF300A9B502 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E97CA26640FF300A9B502 /* UserService.swift */; };
 		745EAF842655EBB4002291E1 /* PCD_IoasysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */; };
 		745EAF862655EBB4002291E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF852655EBB4002291E1 /* ContentView.swift */; };
 		745EAF882655EBB6002291E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745EAF872655EBB6002291E1 /* Assets.xcassets */; };
@@ -28,7 +32,6 @@
 		745EAF9726560558002291E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EAF9626560558002291E1 /* HomeView.swift */; };
 		747BB4EA26604CF200426F88 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BB4E926604CF200426F88 /* EventDetailView.swift */; };
 		747BB4EC26605B0700426F88 /* CourseTwoCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BB4EB26605B0700426F88 /* CourseTwoCards.swift */; };
-		747BC5DA265F18C3004F4BA4 /* HomePremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */; };
 		747BC5DE265F1DC8004F4BA4 /* CourseOneCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5DD265F1DC8004F4BA4 /* CourseOneCards.swift */; };
 		747BC5E2265F24DD004F4BA4 /* CourseThreeCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BC5E1265F24DD004F4BA4 /* CourseThreeCards.swift */; };
 		74A2FC822659730500058545 /* JobsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2FC812659730500058545 /* JobsCards.swift */; };
@@ -38,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740DD93426643EB800F9775E /* Disability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disability.swift; sourceTree = "<group>"; };
 		741115BC265BC70600C1270D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		741115BE265BCEC200C1270D /* RegisterViewPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewPremium.swift; sourceTree = "<group>"; };
 		741115C0265BD2B100C1270D /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
@@ -46,11 +50,13 @@
 		74210CDD265FD56D0076577A /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		74210CDF265FD7B40076577A /* CardsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsEvents.swift; sourceTree = "<group>"; };
 		742161A3265697AE00D2DA2A /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		744B16CF26644A7A007FCCEB /* DataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClass.swift; sourceTree = "<group>"; };
 		745249622661D57300CD4E20 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = ../../SplashView.swift; sourceTree = "<group>"; };
 		745249642662AE6000CD4E20 /* LoginTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTwoView.swift; sourceTree = "<group>"; };
 		7456E54626607E0E00D48B0C /* JobsCardsJobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCardsJobsView.swift; sourceTree = "<group>"; };
 		7456E54826608FB000D48B0C /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		745D407A265B0DE10086B2CC /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		745E97CA26640FF300A9B502 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		745EAF802655EBB4002291E1 /* PCD-Ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PCD-Ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCD_IoasysApp.swift; sourceTree = "<group>"; };
 		745EAF852655EBB4002291E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,7 +67,6 @@
 		745EAF9626560558002291E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		747BB4E926604CF200426F88 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		747BB4EB26605B0700426F88 /* CourseTwoCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseTwoCards.swift; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/CourseTwoCards.swift"; sourceTree = "<group>"; };
-		747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePremiumView.swift; sourceTree = "<group>"; };
 		747BC5DD265F1DC8004F4BA4 /* CourseOneCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseOneCards.swift; sourceTree = "<group>"; };
 		747BC5E1265F24DD004F4BA4 /* CourseThreeCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseThreeCards.swift; sourceTree = "<group>"; };
 		74A2FC812659730500058545 /* JobsCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCards.swift; sourceTree = "<group>"; };
@@ -75,12 +80,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745E97C22663177F00A9B502 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		740DD92E26643E3900F9775E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				740DD93426643EB800F9775E /* Disability.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		745E97C926640F9B00A9B502 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				740DD92E26643E3900F9775E /* Models */,
+				745E97CA26640FF300A9B502 /* UserService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		745EAF772655EBB4002291E1 = {
 			isa = PBXGroup;
 			children = (
@@ -100,12 +123,14 @@
 		745EAF822655EBB4002291E1 /* PCD-Ioasys */ = {
 			isa = PBXGroup;
 			children = (
+				745E97C926640F9B00A9B502 /* Networking */,
 				745EAF832655EBB4002291E1 /* PCD_IoasysApp.swift */,
 				745EAF852655EBB4002291E1 /* ContentView.swift */,
 				741115BC265BC70600C1270D /* RegisterView.swift */,
 				745249622661D57300CD4E20 /* SplashView.swift */,
 				741115BE265BCEC200C1270D /* RegisterViewPremium.swift */,
 				741115C0265BD2B100C1270D /* PaymentView.swift */,
+				744B16CF26644A7A007FCCEB /* DataClass.swift */,
 				745EAF872655EBB6002291E1 /* Assets.xcassets */,
 				747BC5E1265F24DD004F4BA4 /* CourseThreeCards.swift */,
 				745EAF8C2655EBB6002291E1 /* Info.plist */,
@@ -113,7 +138,6 @@
 				745EAF92265600E0002291E1 /* Color+Extension.swift */,
 				747BB4EB26605B0700426F88 /* CourseTwoCards.swift */,
 				745EAF9626560558002291E1 /* HomeView.swift */,
-				747BC5D9265F18C3004F4BA4 /* HomePremiumView.swift */,
 				74A2FC8326598A0800058545 /* TabBarController.swift */,
 				74B2C5FE265B239B007138EA /* LoginView.swift */,
 				745249642662AE6000CD4E20 /* LoginTwoView.swift */,
@@ -157,6 +181,9 @@
 			dependencies = (
 			);
 			name = "PCD-Ioasys";
+			packageProductDependencies = (
+				745E97C12663177F00A9B502 /* Alamofire */,
+			);
 			productName = "PCD-Ioasys";
 			productReference = 745EAF802655EBB4002291E1 /* PCD-Ioasys.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +211,9 @@
 				Base,
 			);
 			mainGroup = 745EAF772655EBB4002291E1;
+			packageReferences = (
+				745E97C02663177E00A9B502 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 745EAF812655EBB4002291E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -211,13 +241,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				741115BD265BC70600C1270D /* RegisterView.swift in Sources */,
-				747BC5DA265F18C3004F4BA4 /* HomePremiumView.swift in Sources */,
 				745249632661D57300CD4E20 /* SplashView.swift in Sources */,
+				744B16D026644A7A007FCCEB /* DataClass.swift in Sources */,
 				745EAF862655EBB4002291E1 /* ContentView.swift in Sources */,
 				74A2FC822659730500058545 /* JobsCards.swift in Sources */,
 				7456E54926608FB000D48B0C /* AlertController.swift in Sources */,
 				74B2C5FD265B1C9E007138EA /* MyAccountView.swift in Sources */,
+				745E97CB26640FF300A9B502 /* UserService.swift in Sources */,
 				742161A4265697AE00D2DA2A /* JobsView.swift in Sources */,
+				740DD93526643EB800F9775E /* Disability.swift in Sources */,
 				745EAF9726560558002291E1 /* HomeView.swift in Sources */,
 				74A2FC8426598A0800058545 /* TabBarController.swift in Sources */,
 				741115C1265BD2B100C1270D /* PaymentView.swift in Sources */,
@@ -424,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		745E97C02663177E00A9B502 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		745E97C12663177F00A9B502 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 745E97C02663177E00A9B502 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 745EAF782655EBB4002291E1 /* Project object */;
 }

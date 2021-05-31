@@ -47,13 +47,13 @@ struct JobsView: View {
                 ForEach(0..<50){_ in
                     HStack (spacing:13){
                         ForEach(0..<2) {_ in
-                            NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(false)){
+                            NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(true)){
                                 JobsCardsJobsView().cornerRadius(15).shadow(radius: 2)
 }                        }
                     }
                     Spacer().frame(height:15) }
             }
-        }.navigationBarHidden(true).navigationBarTitle(Text("Vagas")).edgesIgnoringSafeArea([.top,.bottom])
+        }.navigationBarHidden(true).navigationBarTitle(Text("")).edgesIgnoringSafeArea([.top,.bottom])
         
     }
     

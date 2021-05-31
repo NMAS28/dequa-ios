@@ -11,14 +11,14 @@ struct CardsEvents: View {
             Image(img).renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 450, height: 130)
             Spacer().frame(height:20)
             HStack {
-                Text("Design de Interface do Usuário").font(.system(size: 20, weight: .bold))
+                Text("Design de Interface do Usuário").font(.system(size: 20, weight: .bold)).foregroundColor(.black)
                 Spacer()
             }
             
             HStack {
                 
                     Image("CalendarImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width:30, height:30)
-                    Text("25 de setembro de 2021").font(.system(size: 14, weight: .regular))
+                Text("25 de setembro de 2021").font(.system(size: 14, weight: .regular)).foregroundColor(.black)
                 Spacer()
                 
         

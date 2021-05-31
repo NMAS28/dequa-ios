@@ -30,8 +30,8 @@ struct HomeView: View {
                         TextField("Pesquisar", text : $search).textFieldStyle(CustomTextFieldStyle())
                     }.background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.9, height: 60)
                     Spacer().frame(height:10)
-                    ZStack {
-                        NavigationLink(destination: RegisterViewPremium().navigationBarBackButtonHidden(false)){
+                    Group {
+                        NavigationLink(destination: RegisterViewPremium().navigationBarBackButtonHidden(true)){
                             
                             Image("SecondImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: UIScreen.main.bounds.width, height: 350)
                             
@@ -51,7 +51,7 @@ struct HomeView: View {
                         ScrollView(.horizontal){
                             HStack(spacing:15) {
                                 ForEach(0..<5){_ in
-                                    NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(false)){
+                                    NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(true)){
                                         JobsCards()}.cornerRadius(15).shadow(radius: 15)
                                     
                                 }
@@ -64,7 +64,7 @@ struct HomeView: View {
                         ScrollView(.horizontal){
                             HStack(spacing:15) {
                                 ForEach(0..<5){_ in
-                                    NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(false)){
+                                    NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(true)){
                                         JobsCards()}.cornerRadius(15).shadow(radius: 15)
                                     
                                 }
@@ -77,7 +77,7 @@ struct HomeView: View {
                         ScrollView(.horizontal){
                             HStack(spacing:15) {
                                 ForEach(0..<5){_ in
-                                    NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(false)){
+                                    NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(true)){
                                         JobsCards()}.cornerRadius(15).shadow(radius: 15)
                                     
                                 }
@@ -90,7 +90,7 @@ struct HomeView: View {
                         ScrollView(.horizontal){
                             HStack(spacing:15) {
                                 ForEach(0..<5){_ in
-                                    NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(false)){
+                                    NavigationLink(destination: JobDetailView().navigationBarBackButtonHidden(true)){
                                         JobsCards()}.cornerRadius(15).shadow(radius: 15)
                                     
                                     
@@ -113,7 +113,7 @@ struct HomeView: View {
 
                     Spacer().frame(height:60)
                 }.frame(maxWidth: .infinity)}
-                .navigationBarHidden(true).navigationBarTitle(Text("Home")).edgesIgnoringSafeArea([.top,.bottom])
+                .navigationBarHidden(true).navigationBarTitle(Text("Home")).edgesIgnoringSafeArea([.top,.bottom]).navigationBarBackButtonHidden(true)
             
         }
     }

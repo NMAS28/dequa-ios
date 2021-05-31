@@ -59,7 +59,7 @@ struct LoginTwoView: View {
         Spacer()
                 
             }
-            .navigationBarHidden(true).navigationBarTitle(Text("Home")).edgesIgnoringSafeArea([.top,.bottom])
+            .navigationBarHidden(true).navigationBarTitle(Text("")).edgesIgnoringSafeArea([.top,.bottom])
         }
 }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MyAccountView: View {
+    @State var isShowingTab: Bool = false
     var body: some View {
         VStack {
             Spacer().frame(height:40)
@@ -17,9 +18,14 @@ struct MyAccountView: View {
                 Divider()
                 HStack {
                     
-                    NavigationLink(destination: LoginTwoView().navigationBarBackButtonHidden(true)){
+                    NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)){
                     Image("UserIcon").padding()
-                    Text("Entre ou Cadastre-se").font(.system(size: 25, weight: .medium)).foregroundColor(.black)
+                        if DataClass.sharedManager.isLogged{
+                            Text("Olá, usuário!").font(.system(size: 25, weight: .medium)).foregroundColor(.black)
+                        } else{
+                            Text("Entre ou Cadastre-se").font(.system(size: 25, weight: .medium)).foregroundColor(.black)
+                        }
+                    
                         Spacer()
                         
                     }
@@ -56,13 +62,24 @@ struct MyAccountView: View {
                 }
             }
             Spacer().frame(height:50)
-            HStack {
-                NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)){
-                    Text("Logout").font(.system(size: 25, weight: .regular)).foregroundColor(.red).padding(.horizontal,10)
-                    Spacer()
+            if DataClass.sharedManager.isLogged{
+                HStack {
+                    NavigationLink(destination: TabBarController(), isActive: $isShowingTab) {Text("")}
+                    Button("Logout"){
+                        self.isShowingTab = true
+                        DataClass.sharedManager.isLogged = false
+                        DataClass.sharedManager.isPremium = false
+                        
+                        
+                        
+                    }.font(.system(size: 25, weight: .regular)).foregroundColor(.red)
+                        Spacer()
+                    }
+                
                 }
-            }
-            Spacer().frame(height:30)
+            
+    
+        
             
             Spacer()
             

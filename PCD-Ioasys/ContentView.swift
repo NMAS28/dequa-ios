@@ -69,6 +69,6 @@ struct ExtractedView: View {
                     }
                 }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width*0.9)
             }
-        }
+        }.navigationBarHidden(true)
     }
 }

@@ -12,7 +12,7 @@ struct EventsView: View {
     var body: some View{
         VStack {
             Spacer().frame(height:40)
-            Text("Eventos").font(.system(size: 25, weight: .bold)).padding()
+            Text("Eventos").font(.system(size: 25, weight: .bold))
             
             HStack {
                 VStack(spacing:2){

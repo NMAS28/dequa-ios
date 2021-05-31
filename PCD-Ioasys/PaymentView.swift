@@ -47,16 +47,16 @@ struct PaymentView: View {
                         Spacer()
                     }
                     Spacer().frame(height:20)
-                    TextField("Nome", text : $cardName).textFieldStyle(CustomTextFieldStyle()).padding(.horizontal,15)
-                    Spacer().frame(height:20)
-                    TextField("Sobrenome", text : $cardSurName).textFieldStyle(CustomTextFieldStyle()).padding(.horizontal,15)
+                    TextField("Nome Completo", text : $cardName).textFieldStyle(CustomTextFieldStyle()).padding(.horizontal,15)
+                    
+                    
                     
                 }
                 Spacer().frame(height:20)
                 
                 Group {
                     HStack {
-                        Text("Vencimeto").font(.system(size: 20, weight: .bold)).padding(.horizontal,15)
+                        Text("Vencimento").font(.system(size: 20, weight: .bold)).padding(.horizontal,15)
                         Spacer()
                     }
                     

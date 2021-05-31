@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TabBarController: View {
-    var isPremium : Bool = false
     var body: some View {
         NavigationView {
             TabView {
@@ -23,7 +22,7 @@ struct TabBarController: View {
                         Text("Vagas")
                     }
                 
-                if isPremium{
+                if DataClass.sharedManager.isPremium{
                     EventsView()
                         .tabItem{
                             Image("CamImage")
@@ -40,7 +39,7 @@ struct TabBarController: View {
                 
                 
             }
-        }
+        }.navigationBarHidden(true)
     }
 }
 
