@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EventDetailView: View {
     var body: some View {
-        NavigationView{
+        Group{
             VStack(spacing:40){
                 Spacer().frame(height:10)
                 
@@ -81,8 +81,7 @@ struct EventDetailView: View {
                 }
                 
                 
-            }.navigationBarHidden(true).navigationBarTitle(Text("Home")).edgesIgnoringSafeArea([.top,.bottom]).navigationBarBackButtonHidden(true)
-        }
+            }.navigationBarHidden(true).navigationBarTitle(Text("")).edgesIgnoringSafeArea([.top,.bottom]).navigationBarBackButtonHidden(true)        }
     }
     
     struct EventDetailView_Previews: PreviewProvider {

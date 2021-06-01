@@ -25,10 +25,6 @@ struct HomeView: View {
                         }
                         
                     }
-                    HStack(spacing:2) {
-                        Image("GlassImage").padding(.leading, 10)
-                        TextField("Pesquisar", text : $search).textFieldStyle(CustomTextFieldStyle())
-                    }.background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.9, height: 60)
                     Spacer().frame(height:10)
                     Group {
                         NavigationLink(destination: RegisterViewPremium().navigationBarBackButtonHidden(true)){

@@ -31,6 +31,11 @@ struct PaymentView: View {
                     HStack {
                         Text("Informações de pagamento").font(.system(size: 20, weight: .bold)).padding()
                         Spacer()
+                        }
+                    HStack {
+                        Text("Tudo por apenas 12x R$79,90.").font(.system(size: 15, weight: .regular)).padding(.horizontal,20)
+                        Spacer()
+                        
                     }
                     HStack {
                         Spacer()
@@ -117,6 +122,7 @@ struct PaymentView: View {
                 } ){
                     Text("Finalizar pagamento").font(.system(size: 22, weight: .bold)).foregroundColor(.white).padding(.horizontal, 90).padding(.vertical, 8).background(Color(hex:0x5d184b)).cornerRadius(8)
                 }
+                Spacer().frame(height:110)
             }
         }.navigationBarHidden(true).navigationBarTitle(Text("PaymentView")).edgesIgnoringSafeArea([.top,.bottom])
     }

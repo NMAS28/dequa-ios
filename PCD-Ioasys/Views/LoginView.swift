@@ -55,7 +55,7 @@ struct LoginView: View {
                                                    DataClass.sharedManager.isPremium = false
                                                     DataClass.sharedManager.isLogged = true
                                                } else{
-                                                   UIAlertController.alert(title: "Usuário incorreto", message: "")
+                                                   UIAlertController.alert(title: "Usuário incorreto! Digite Premium ou Free.", message: "")
                                                }
                         
                         

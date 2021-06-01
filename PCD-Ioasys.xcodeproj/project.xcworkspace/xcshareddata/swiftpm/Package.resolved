@@ -9,6 +9,15 @@
           "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
           "version": "5.4.3"
         }
+      },
+      {
+        "package": "SwiftUILib-DocumentPicker",
+        "repositoryURL": "https://github.com/swiftuilib/document-picker",
+        "state": {
+          "branch": null,
+          "revision": "dca7adf7c1ff5355b696ba2da7aebf6ffa9bb15d",
+          "version": "1.0.0"
+        }
       }
     ]
   },

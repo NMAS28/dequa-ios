@@ -123,8 +123,8 @@ struct JobDetailView: View {
                             Text("Carregar Currículo").font(.system(size: 18, weight: .medium))
                             Spacer()
                         }
-                        TextField("Selecionar Arquivo", text : $CVName).textFieldStyle(CustomTextFieldStyle()).padding()
                         
+                            TextField("Selecionar Arquivo", text : $CVName).textFieldStyle(CustomTextFieldStyle()).padding()
                         
                     }
                     
@@ -163,4 +163,3 @@ struct JobDetailView_Previews: PreviewProvider {
         JobDetailView()
     }
 }
-
