@@ -75,7 +75,7 @@ struct RegisterView: View {
                     Spacer().frame(height:20)
                 
                     HStack {
-                        PickerField("Deficiência", data: self.options, selectionIndex: $selectedIndex).padding(.horizontal,10)
+                        PickerField("Deficiência", data: self.optionsName, selectionIndex: $selectedIndex).padding(.horizontal,10)
                         Image("ArrowImage").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).frame(width: 30, height: 30).padding(.horizontal,5)
                     }.background(Color(hex:0xf2f2f2)).cornerRadius(12).frame(width: UIScreen.main.bounds.width*0.92, height:60).padding()
                     
